@@ -1,23 +1,26 @@
 import sys
 import time
 import itertools
-
-
+from itertools import combinations
 start = time.time() 
 sys.stdin=open("input.txt", "r")
 #import math
 #n = int(sys.stdin.readline())
 
+E, S, M = map(int, input().split())
+year = 1
+
+while True:
+  if (year - E)%15 == 0 and (year - S)%28 == 0 and (year - M)%19 == 0:
+    print(year)
+  year+=1
 
 
-n = int(input())
-a = list(map(int, input().split()))
-sum = [a[0]]
-for i in range(len(a) - 1):
-    sum.append(max(sum[i] + a[i + 1], a[i + 1]))
-print(max(sum))
 
-print(sum)
+
+
+
+
 
 
 
