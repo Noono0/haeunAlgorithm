@@ -10,17 +10,34 @@ sys.stdin=open("input.txt", "r")
 
 
 
-n = int(input())
-dp = [0 for i in range(n + 1)]
-square = [i * i for i in range(1, 317)]
-for i in range(1, n + 1):
-    s = []
-    for j in square:
-        if j > i:
-            break
-        s.append(dp[i - j])
-    dp[i] = min(s) + 1
-print(dp[n])
+n ,m = map(int,input().split())
+#print(n,m)
+arr = list(map(int,input().split()))
+
+tmp =[]
+def chk(start):
+  if len(tmp) == m:
+    print(' '.join(map(str,tmp)))
+    return
+
+  for i in range(start,n+1):
+      tmp.append(arr[i])
+      chk(i)
+      #print("t",tmp)
+      tmp.pop()
+      
+
+
+chk(1)
+
+
+
+
+
+
+
+
+
 
 
 
