@@ -1,9 +1,90 @@
 최소공배수, 최대공약수
   ㄴ> 유클리드 호제법
+----------------------------
+def gcd(x,y):
+  while(y):
+    x,y = y, x%y
+  return x
+----------------------------
+def lcm(x,y):
+  return (x*y)//gcd(x,y) # math 함수사용 OR gcd함수구현
+----------------------------
+# N개의 최소공배수
+def solution(arr):
+    def lcm(x, y):
+        return x * y // gcd(x, y)
+
+    while True:
+        arr.append(lcm(arr.pop(), arr.pop()))
+        if len(arr) == 1:
+            return arr[0]
+
+print(solution([2, 6, 8, 14]))
+-----------------------------
+
+
+
+소수 구하기
+  ㄴ> 에라토스테네스의 체
+-----------------------------
+n=100
+
+def isPrime(a):
+  if(a<2):
+    return False
+  for i in range(2,a):
+    if(a%i==0):
+      return False
+  return True
+
+for i in range(n+1):
+  if(isPrime(i)):
+    print(i)
+-----------------------------
+n=1000
+a = [False,False] + [True]*(n-1)
+primes=[]
+
+for i in range(2,n+1):
+  if a[i]:
+    primes.append(i)
+    for j in range(2*i, n+1, i):
+        a[j] = False
+print(primes)
+-----------------------------
+
+
+
+이분/이진 탐색 (Binary Search)
+-----------------------------
+def binary_search(arr, value):
+    first, last = 0, len(arr)
+
+    while first <= last:
+        mid = (first + last) // 2
+        if arr[mid] == value:
+            return mid
+        if arr[mid] > value:
+            last = mid - 1
+        else:
+            first = mid + 1
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result_index = binary_search(arr, 6)
+print(result_index, arr[result_index])
+# 5 6
+-----------------------------
+
+https://brownbears.tistory.com/560?category=168282
+
+커밋용
 
 
 
 
+
+
+next permutation
 
 
 
