@@ -75,6 +75,16 @@ print(result_index, arr[result_index])
 # 5 6
 -----------------------------
 
+
+순열구하기 2개
+https://codepractice.tistory.com/59 에서 2개 
+파라미터2개 , 3개 짜리 외우자
+itertools의 permutation도 덤으로 외우자
+시간복잡도 = O(N! X N) 
+
+
+
+
 https://brownbears.tistory.com/560?category=168282
 
 커밋용
@@ -84,7 +94,7 @@ https://brownbears.tistory.com/560?category=168282
 
 
 
-next permutation 집에가서 확인하자
+next permutation 집에가서 확인하자1
 
 
 
