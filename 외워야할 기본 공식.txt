@@ -1,3 +1,12 @@
+정리를 해보자면
+정렬,아래 공식들 순열,조합,
+
+
+
+
+
+
+
 최소공배수, 최대공약수
   ㄴ> 유클리드 호제법
 ----------------------------
@@ -80,6 +89,7 @@ print(result_index, arr[result_index])
 https://codepractice.tistory.com/59 에서 2개 
 파라미터2개 , 3개 짜리 외우자
 itertools의 permutation도 덤으로 외우자
+https://youngwise.tistory.com/15
 시간복잡도 = O(N! X N) 
 
 
@@ -98,7 +108,7 @@ next permutation 집에가서 확인하자1
 
 
 
-
+업무가 바쁘다..ㅠㅠ 커밋용1
 
 
 
