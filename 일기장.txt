@@ -1,5 +1,5 @@
 git token 0820
-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
+ghp_8cXEVdcVrWKUNV00       pg7hQ0gNXR2kTd129U9m
 
 https://programmers.co.kr/posts/tag/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84
 
@@ -55,3 +55,9 @@ filter , interceptor 차이 더공부하기2
 Salt 작업
 
 123
+
+
+----------
+0824 보안관련 공부- 웹취약점,  OWASP 10
+
+
