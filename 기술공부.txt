@@ -1,6 +1,6 @@
 ----- 21.07.28 -----
 
-git 토큰 ghp__HfovRT6NvwCduVKThx0mYaeyK7lxsZ2nI2qL
+git 토큰
 
 OOP란
 현실세계를 프로그래밍으로 옮겨와 현실세계의 사물들을 객체로 보고 그 객체로부터 특징, 기능을 프로그래밍하는 기법
