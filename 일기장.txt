@@ -1,4 +1,4 @@
-git token 0820
+gvgit token 0820
 ghp_8cXEVdcVrWKUNV00       pg7hQ0gNXR2kTd129U9m
 
 https://programmers.co.kr/posts/tag/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84
@@ -245,5 +245,6 @@ ads 배포 (재확인) 및 가이드 작성~
 갤럭시 사전예약~
 0216
 알고리즘 공부도같이하자~
-
+0218
+ㄱ개망함 개망함
 
