@@ -11,22 +11,38 @@ sys.stdin=open("input.txt", "r")
 #d
 ############################
 
+array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
 
-input_data = input()
-row = int(input_data[1])
-column = int(ord(input_data[0])) - int(ord('a')) + 1
+def quick_sort(array):
+    # 리스트가 하나 이하의 원소만을 담고 있다면 종료
+    if len(array) <= 1:
+        return array
 
-steps = [(-2,-1), (-1,-2), ()]
+    pivot = array[0] # 피벗은 첫 번째 원소
+    tail = array[1:] # 피벗을 제외한 리스트
 
-result =0
-for step in steps:
-  next_row = row + step[0]
-  next_column = column + step[1]
+    left_side = [x for x in tail if x <= pivot] # 분할된 왼쪽 부분
+    right_side = [x for x in tail if x > pivot] # 분할된 오른쪽 부분
 
-  if next_row >= 1 and next_row
+    # 분할 이후 왼쪽 부분과 오른쪽 부분에서 각각 정렬을 수행하고, 전체 리스트를 반환
+    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
 
+print(quick_sort(array))
+    
 
+def quick_sort(array):
+  if len(array) <= 1:
+    return array
 
+  pivot = array[0]
+  tail = array[1:]
+
+  leftSide = [x for x in tail if x <= pivot]
+  rightside = [x for x in tail if x > pivot]
+
+  return quick_sort(leftSide) + [pivot] + quick_sort(rightside)
+
+print(quick_sort(array))
 
 
 #############################
