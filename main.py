@@ -11,8 +11,15 @@ sys.stdin=open("input.txt", "r")
 #d
 ############################
 
-input_data = input()
-row = int(input_data[1])
+def seq(n, target, array):
+  for i in range(n):
+    if array[i] == target:
+      
+
+
+
+
+
 
 
 
