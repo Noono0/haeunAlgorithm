@@ -11,26 +11,20 @@ sys.stdin=open("input.txt", "r")
 #d
 ############################
 
-n, m = list(map(int, input().split()))
+n = int(input())
 
-array = list(map(int, input().split()))
+array = list(map(int,input().split()))
 
-start = 0
-end = max(array)
+d = [0] * 100001
 
-result = 0
-while(start <= end):
-  total = 0
-  mid = (start + end) // 2
-  for x in array:
-    if x > mid:
-      total += x - mid
-  if total < m:
-    end = mid -1
-  else:
-    result = mid
-    start = mid + 1
+d[0] = array[0]
+d[1] = max(array[0], array[1])
 
+for i in range(2, n):
+  d[i] = max(d[i-1], d[i-2]+array[i])
+
+  print(d[n-1])
+  
 
 
 
